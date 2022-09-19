@@ -1,0 +1,16 @@
+{
+  "name": "remotion-sidecar",
+  "version": "1.0.0",
+  "main": "js/remotion.js",
+  "repository": "https://github.com/glhd/remotion-sidecar.git",
+  "author": "Chris Morrell <inxilpro@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "remotion": "^3.2.21"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^3.2.21"
+  }
+}
