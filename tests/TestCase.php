@@ -1,8 +1,8 @@
 <?php
 
-namespace Glhd\LaravelPackageTemplate\Tests;
+namespace Glhd\RemotionSidecar\Tests;
 
-use Glhd\LaravelPackageTemplate\Support\PackageServiceProvider;
+use Glhd\RemotionSidecar\Support\RemotionSidecarServiceProvider;
 use Illuminate\Container\Container;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -11,7 +11,7 @@ abstract class TestCase extends Orchestra
 	protected function getPackageProviders($app)
 	{
 		return [
-			PackageServiceProvider::class,
+			RemotionSidecarServiceProvider::class,
 		];
 	}
 	
