@@ -12,8 +12,9 @@
   ],
   "license": "MIT",
   "require": {
-    "illuminate/support": "^8.0|^9.0",
-    "ext-json": "*"
+    "illuminate/support": "^9.30",
+    "ext-json": "*",
+    "hammerstone/sidecar": "^0.3.12"
   },
   "require-dev": {
     "orchestra/testbench": "^6.21|^7.0",
