@@ -6,11 +6,19 @@
   "author": "Chris Morrell <inxilpro@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "esbuild js/src/remotion.jsx --outfile=js/dist/remotion.js --format=cjs",
+    "copy": "cp js/src/HelloWorld.jsx js/dist/ && cp js/src/index.jsx js/dist/ && cp js/src/Video.jsx js/dist/"
+  },
   "dependencies": {
+    "@remotion/bundler": "^3.2.22",
+    "@remotion/renderer": "^3.2.22",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "remotion": "^3.2.21"
   },
   "devDependencies": {
-    "@remotion/cli": "^3.2.21"
+    "@remotion/cli": "^3.2.21",
+    "esbuild": "^0.15.8"
   }
 }

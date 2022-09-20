@@ -21,7 +21,14 @@ class RemotionFunction extends LambdaFunction
 	
 	public function package()
 	{
-		return Package::make()->include([__DIR__.'/../js/']);
+		return Package::make()
+			->setBaseDir(__DIR__.'/../js/dist/')
+			->include([
+				'HelloWorld.jsx',
+				'index.jsx',
+				'remotion.js',
+				'Video.jsx',
+			]);
 	}
 	
 	public function runtime()
